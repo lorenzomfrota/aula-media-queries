@@ -1,0 +1,39 @@
+:root {
+    --desktop: 1200px;
+    --tablet: 1024px;
+    --phablet: 768px;
+    --mobile: 320px;
+}
+
+.body {
+    h1: margin 0;
+}
+
+.container {
+    background: red;
+    width: var(--desktop);
+    color: white;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+.container {
+    width: var(--tablet);
+    background-color: blue;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+    width: var(--phablet);
+    background-color: green;
+    }
+}
+
+@media screen and (max-width: 768) {
+    .container {
+        width: 100%;
+        background-color: purple;
+    }
+}
+

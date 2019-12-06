@@ -1,0 +1,62 @@
+:root {
+    --desktop: 1200px;
+    --tablet: 1024px;
+    --phablet: 768px;
+    --mobile: 320px;
+}
+
+html {
+    font-size: 4.5vw;
+}
+
+body, h1 {
+    h1: margin 0;
+}
+
+.container {
+    background: purple;
+    width: 100%;
+    color: white;
+    margin: 0 auto;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768) {
+    html {
+        font-size: 1.6vw;
+    }
+
+    .container {
+        background-color: blue;
+        width: 48rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size:2.5vw;
+    }
+
+    .container {
+        background-color: blue;
+        width: var(--tablet);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+
+    .container {
+        background-color: red;
+        width: var(--desktop);
+    }
+}
+
